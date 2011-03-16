@@ -1,0 +1,1112 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (12.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "schedulers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_floor" varchar(255), "robot" varchar(255), "move_from" varchar(255), "move_to" varchar(255), "frequency" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316045323')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedulers")[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2011-03-16 10:29:45) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 62ms (View: 1, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-16 10:31:02) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 10:31:45) [GET]
+Rendering home/index
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-16 10:31:47) [GET]
+
+ActionController::RoutingError (No route matches "/scheduler/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-16 10:34:30) [GET]
+
+ActionController::RoutingError (No route matches "/scheduler/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 10:34:34) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 10:34:34) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 10:34:34) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-16 10:34:36) [GET]
+
+ActionController::RoutingError (No route matches "/scheduler/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 10:35:06) [GET]
+Rendering scheduler/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:01:52) [GET]
+Rendering home/index
+Completed in 196ms (View: 195, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:02:16) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:02:18) [GET]
+Rendering scheduler/new
+Completed in 251ms (View: 246, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:04:46) [GET]
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:04:49) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:09:51) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:09:53) [GET]
+Rendering scheduler/new
+Completed in 41ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:10:15) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (undefined method `info' for Logger:Class):
+  app/controllers/scheduler_controller.rb:8:in `new'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:12:57) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:12:58) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:23) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 53ms (View: 40, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:25) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 42ms (View: 33, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:27) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 107ms (View: 98, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:29) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 45ms (View: 36, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:31) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 38ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:33) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 41ms (View: 33, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:13:35) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Rendering scheduler/new
+Completed in 100ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:14:18) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:14:18) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:14:18) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:14:25) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test123", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+test
+Redirected to http://localhost:3000/scheduler/new
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:14:25) [GET]
+Rendering scheduler/new
+Completed in 99ms (View: 94, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:17:23) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:17:27) [GET]
+Rendering scheduler/new
+Completed in 55ms (View: 48, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:18:05) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+TypeError (can't convert Scheduler into String):
+  app/controllers/scheduler_controller.rb:8:in `new'
+  app/controllers/scheduler_controller.rb:8:in `each'
+  app/controllers/scheduler_controller.rb:8:in `each_with_index'
+  app/controllers/scheduler_controller.rb:8:in `new'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:18:30) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+#<Scheduler:0x103fbb040>
+#<Scheduler:0x103fa2068>
+#<Scheduler:0x103fa1fa0>
+#<Scheduler:0x103fa1f50>
+#<Scheduler:0x103fa1028>
+#<Scheduler:0x103f9fe80>
+#<Scheduler:0x103f9ed78>
+#<Scheduler:0x103f9dc70>
+#<Scheduler:0x103f9cb68>
+#<Scheduler:0x103f9ba60>
+#<Scheduler:0x103f9a958>
+#<Scheduler:0x103f99850>
+#<Scheduler:0x103f98748>
+#<Scheduler:0x103f97640>
+#<Scheduler:0x103f964e8>
+#<Scheduler:0x103f953e0>
+#<Scheduler:0x103f942d8>
+#<Scheduler:0x103f931a8>
+#<Scheduler:0x103f920a0>
+#<Scheduler:0x103f90f70>
+Redirected to http://localhost:3000/scheduler/new
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:18:30) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:19:11) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"test", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"test", "robot"=>"test", "move_from"=>"test", "shop_floor"=>"test", "frequency"=>"test"}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:19:11) [GET]
+Rendering scheduler/new
+Completed in 45ms (View: 41, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:19:57) [GET]
+Rendering home/index
+Completed in 170ms (View: 168, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:19:59) [GET]
+Rendering scheduler/new
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:20:15) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:20:15) [GET]
+Rendering scheduler/new
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:22:36) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 64ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:22:37) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:27:06) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:27:07) [GET]
+Rendering scheduler/new
+Completed in 47ms (View: 43, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:27:22) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:27:39) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:27:39) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:28:49) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (undefined method `each' for #<Scheduler:0x1041d3918>):
+  app/controllers/scheduler_controller.rb:8:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:29:53) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (undefined method `each' for #<Scheduler:0x103fb5848>):
+  app/controllers/scheduler_controller.rb:8:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 11:34:25) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:34:27) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:34:38) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:34:38) [GET]
+Rendering scheduler/new
+Completed in 103ms (View: 99, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:40:29) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:40:52) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:40:52) [GET]
+Rendering scheduler/new
+Completed in 40ms (View: 35, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:42:06) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:42:06) [GET]
+Rendering scheduler/new
+Completed in 106ms (View: 98, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:43:12) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `ssssssss' for #<SchedulerController:0x10443ff58>):
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (30.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:43:31) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:43:31) [GET]
+Rendering scheduler/new
+Completed in 52ms (View: 46, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:44:44) [GET]
+Rendering scheduler/new
+Completed in 91ms (View: 86, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:45:01) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+TypeError (can't convert String into Integer):
+  app/controllers/scheduler_controller.rb:8:in `[]'
+  app/controllers/scheduler_controller.rb:8:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:45:25) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:45:25) [GET]
+Rendering scheduler/new
+Completed in 37ms (View: 32, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:46:19) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (undefined method `move_to' for "6":String):
+  app/controllers/scheduler_controller.rb:8:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:46:55) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:46:55) [GET]
+Rendering scheduler/new
+Completed in 37ms (View: 32, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:47:27) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:47:27) [GET]
+Rendering scheduler/new
+Completed in 97ms (View: 93, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:48:35) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:48:35) [GET]
+Rendering scheduler/new
+Completed in 78ms (View: 74, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:51:04) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:51:04) [GET]
+Rendering scheduler/new
+Completed in 41ms (View: 37, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:53:06) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/scheduler_controller.rb:14:in `new'
+  app/controllers/scheduler_controller.rb:12:in `each'
+  app/controllers/scheduler_controller.rb:12:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:54:38) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `val' for #<SchedulerController:0x104302ac8>):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:55:24) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `val' for #<SchedulerController:0x104112178>):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:55:34) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `val' for #<SchedulerController:0x1042e56d0>):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:56:07) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `val' for #<SchedulerController:0x1040ebeb0>):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:56:20) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:56:20) [GET]
+Rendering scheduler/new
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:57:57) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:57:57) [GET]
+Rendering scheduler/new
+Completed in 98ms (View: 94, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:59:40) [GET]
+Rendering scheduler/new
+Completed in 34ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:59:52) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 11:59:52) [GET]
+Rendering scheduler/new
+Completed in 36ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:00:42) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:00:42) [GET]
+Rendering scheduler/new
+Completed in 95ms (View: 91, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:02:10) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:02:10) [GET]
+Rendering scheduler/new
+Completed in 44ms (View: 39, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:04:00) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+TypeError (can't convert String into Integer):
+  app/controllers/scheduler_controller.rb:13:in `[]'
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:12:in `each'
+  app/controllers/scheduler_controller.rb:12:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:05:41) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:05:41) [GET]
+Rendering scheduler/new
+Completed in 34ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:27:04) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:27:04) [GET]
+Rendering scheduler/new
+Completed in 65ms (View: 60, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:27:56) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:27:56) [GET]
+Rendering scheduler/new
+Completed in 34ms (View: 29, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:28:26) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+NameError (undefined local variable or method `robot' for #<SchedulerController:0x1044ee198>):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:12:in `each'
+  app/controllers/scheduler_controller.rb:12:in `new'
+  app/controllers/scheduler_controller.rb:7:in `each'
+  app/controllers/scheduler_controller.rb:7:in `new'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:28:42) [GET]
+Rendering scheduler/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:28:46) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:28:46) [GET]
+Rendering scheduler/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:29:32) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:29:32) [GET]
+Rendering scheduler/new
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:29:56) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:29:56) [GET]
+Rendering scheduler/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:31:46) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:31:46) [GET]
+Rendering scheduler/new
+Completed in 40ms (View: 35, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:32:41) [GET]
+Rendering scheduler/new
+Completed in 34ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:32:54) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:32:54) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:34:29) [GET]
+Rendering scheduler/new
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:34:36) [GET]
+Rendering scheduler/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:34:46) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:34:46) [GET]
+Rendering scheduler/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:03) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:03) [GET]
+Rendering scheduler/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:17) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:17) [GET]
+Rendering scheduler/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:55) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:35:55) [GET]
+Rendering scheduler/new
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:36:11) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:36:11) [GET]
+Rendering scheduler/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 12:49:29) [GET]
+Rendering home/index
+Completed in 145ms (View: 144, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:49:31) [GET]
+Rendering scheduler/new
+Completed in 90ms (View: 12, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:49:42) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:49:42) [GET]
+Rendering scheduler/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 12:53:13) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:53:14) [GET]
+Rendering scheduler/new
+Completed in 148ms (View: 145, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:53:24) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+Errno::ENOENT (No such file or directory - /public/jokes_1.txt):
+  app/controllers/scheduler_controller.rb:15:in `initialize'
+  app/controllers/scheduler_controller.rb:15:in `open'
+  app/controllers/scheduler_controller.rb:15:in `new'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:54:01) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+Errno::ENOENT (No such file or directory - /rschdule/public/jokes_1.txt):
+  app/controllers/scheduler_controller.rb:15:in `initialize'
+  app/controllers/scheduler_controller.rb:15:in `open'
+  app/controllers/scheduler_controller.rb:15:in `new'
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:54:20) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+Errno::ENOENT (No such file or directory - rschdule/public/jokes_1.txt):
+  app/controllers/scheduler_controller.rb:15:in `initialize'
+  app/controllers/scheduler_controller.rb:15:in `open'
+  app/controllers/scheduler_controller.rb:15:in `new'
+
+Rendered rescues/_trace (89.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:55:24) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Redirected to http://localhost:3000/scheduler/new
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 12:55:24) [GET]
+Rendering scheduler/new
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:01:42) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+ActionController::MissingFile (Cannot read file /public/jokes_1.txt):
+  app/controllers/scheduler_controller.rb:18:in `new'
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:02:08) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/scheduler_controller.rb:19:in `new'
+
+Rendered rescues/_trace (89.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:02:26) [GET]
+Rendering scheduler/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:02:28) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/scheduler_controller.rb:19:in `new'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:02:53) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/scheduler_controller.rb:19:in `new'
+
+Rendered rescues/_trace (86.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:04:21) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:04:59) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"12", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 13:10:32) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:10:34) [GET]
+Rendering scheduler/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:10:45) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  app/controllers/scheduler_controller.rb:14:in `new'
+  app/controllers/scheduler_controller.rb:8:in `each'
+  app/controllers/scheduler_controller.rb:8:in `new'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:11:19) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:12:30) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:13:33) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:13:55) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/jokes_2.txt
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 13:15:33) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:15:35) [GET]
+Rendering scheduler/new
+Completed in 36ms (View: 32, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:16:09) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/public/instructions.txt

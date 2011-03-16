@@ -1,0 +1,26 @@
+<h1>Scheduler#new</h1>
+<table>
+  <tr>
+  <th>Floor</th>
+  <th>Robot Name</th>
+  <th>Movement From</th>
+  <th>Movement To</th>
+  <th>Frequency</th>
+  </tr>
+  <tr>
+  <% form_tag :action => 'new' do %>
+   <% @schedulers.each_with_index do |schedule, index| %>
+     <% fields_for "schedulers[#{index}]", schedule do |f| %>
+       <th><%= f.text_field :shop_floor  %></th>
+       <th><%= f.text_field :robot %></th>
+       <th><%= f.text_field :move_from  %></th>
+       <th><%= f.text_field :move_to  %></th>
+       <th><%= f.text_field :frequency  %></th>
+  <% end %>
+  </tr>
+       <% end %>
+</table>
+<p>
+   <%= submit_tag "Create Schedule" %>
+   <% end %>
+</p>
