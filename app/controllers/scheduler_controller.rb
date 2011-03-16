@@ -7,7 +7,7 @@ class SchedulerController < ApplicationController
       params['schedulers'].each { |obj|
         file_content += obj[1]['move_to'] + "-"+ obj[1]['move_from'] + "-"+ obj[1]['robot'] + "-"+ obj[1]['frequency'] + "\n"
       }
-      my_file = RAILS_ROOT+'/public/instructions.txt'
+      my_file = RAILS_ROOT+'/instructions.txt'
       f = File.open(my_file, 'w')
       f.write(file_content)
       f.close

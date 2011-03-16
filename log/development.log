@@ -1110,3 +1110,9 @@ Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:16:09) [POST]
   Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
 Streaming file /Users/saurav/NetBeansProjects/rschdule/public/instructions.txt
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:32:44) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
+Streaming file /Users/saurav/NetBeansProjects/rschdule/instructions.txt
