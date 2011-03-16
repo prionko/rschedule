@@ -9,7 +9,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110316045323) do
+ActiveRecord::Schema.define(:version => 20110316102327) do
+
+  create_table "floors", :force => true do |t|
+    t.string   "floor_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "frequencies", :force => true do |t|
+    t.string   "frequency"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "movementfroms", :force => true do |t|
+    t.string   "move_from"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "movementtos", :force => true do |t|
+    t.string   "move_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "robots", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "schedulers", :force => true do |t|
     t.string   "shop_floor"

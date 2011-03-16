@@ -1132,3 +1132,666 @@ Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:42:28) [POST]
   Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
 Sending data instruction.txt
 Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:24:04) [GET]
+Rendering scheduler/new
+Completed in 60ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:24:06) [GET]
+Rendering scheduler/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:24:20) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/scheduler_controller.rb:20:in `new'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:38:07) [GET]
+Rendering scheduler/new
+Completed in 193ms (View: 117, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:39:07) [GET]
+Rendering scheduler/new
+Completed in 157ms (View: 137, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:39:14) [GET]
+Rendering scheduler/new
+Completed in 41ms (View: 25, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 14:39:33) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:39:36) [GET]
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined local variable or method `index' for #<ActionView::Base:0x10444b7b8>) on line #12 of app/views/scheduler/new.html.erb:
+9:   </tr>
+10:   <tr>
+11:   <% form_tag :action => 'new' do %>
+12:     <div id=<% "schedulers[#{index}]" %> >
+13:    <% @schedulers.each_with_index do |schedule, index| %>
+14:      <% fields_for "schedulers[#{index}]", schedule do |f| %>
+15:         
+
+    app/views/scheduler/new.html.erb:12
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (9.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:40:32) [GET]
+Rendering scheduler/new
+Completed in 76ms (View: 67, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:41:37) [GET]
+Rendering scheduler/new
+Completed in 395ms (View: 391, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:42:13) [GET]
+Rendering scheduler/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:43:12) [GET]
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1043764a0>) on line #11 of app/views/scheduler/new.html.erb:
+8:   <th>Frequency</th>
+9:   </tr>
+10:   <tr>
+11:   <% form_for :action => 'new' do %>
+12:     
+13:    <% @schedulers.each_with_index do |schedule, index| %>
+14:     
+
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:43:35) [GET]
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1040fb3d8>) on line #11 of app/views/scheduler/new.html.erb:
+8:   <th>Frequency</th>
+9:   </tr>
+10:   <tr>
+11:   <% form_for :controller => 'scheduler', :action => 'new' do %>
+12:     
+13:    <% @schedulers.each_with_index do |schedule, index| %>
+14:     
+
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (36.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:44:38) [GET]
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x10428bf90>) on line #11 of app/views/scheduler/new.html.erb:
+8:   <th>Frequency</th>
+9:   </tr>
+10:   <tr>
+11:   <% form_for :controller => 'scheduler', :action => 'new' do %>
+12:     
+13:    <% @schedulers.each_with_index do |schedule, index| %>
+14:     
+
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (99.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:44:40) [GET]
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1044823f8>) on line #11 of app/views/scheduler/new.html.erb:
+8:   <th>Frequency</th>
+9:   </tr>
+10:   <tr>
+11:   <% form_for :controller => 'scheduler', :action => 'new' do %>
+12:     
+13:    <% @schedulers.each_with_index do |schedule, index| %>
+14:     
+
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:44:47) [GET]
+Rendering scheduler/new
+Completed in 122ms (View: 118, DB: 0) | 200 OK [http://localhost/scheduler/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (13.4ms)[0m   [0mCREATE TABLE "robots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "robot_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "robots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "robot_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "robots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "robot_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "robots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "robot_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "robots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mRobot Create (24.1ms)[0m   [0;1mINSERT INTO "robots" ("name", "created_at", "updated_at") VALUES('Robot 1', '2011-03-16 09:22:26', '2011-03-16 09:22:26')[0m
+  [4;35;1mRobot Create (0.1ms)[0m   [0mINSERT INTO "robots" ("name", "created_at", "updated_at") VALUES('Robot 2', '2011-03-16 09:22:26', '2011-03-16 09:22:26')[0m
+  [4;36;1mRobot Create (0.1ms)[0m   [0;1mINSERT INTO "robots" ("name", "created_at", "updated_at") VALUES('Robot 3', '2011-03-16 09:22:26', '2011-03-16 09:22:26')[0m
+  [4;35;1mRobot Create (0.1ms)[0m   [0mINSERT INTO "robots" ("name", "created_at", "updated_at") VALUES('Robot 4', '2011-03-16 09:22:26', '2011-03-16 09:22:26')[0m
+  [4;36;1mRobot Create (0.1ms)[0m   [0;1mINSERT INTO "robots" ("name", "created_at", "updated_at") VALUES('Robot 5', '2011-03-16 09:22:26', '2011-03-16 09:22:26')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316091555')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("robots")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedulers")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 14:55:46) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:55:48) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+Completed in 137ms (View: 123, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:58:24) [GET]
+  [4;35;1mRobot Load (0.3ms)[0m   [0mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+Completed in 44ms (View: 38, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 14:59:29) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:01:07) [GET]
+  [4;35;1mRobot Load (0.3ms)[0m   [0mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+
+ActionView::TemplateError (undefined local variable or method `object' for #<ActionView::Base:0x104270d08>) on line #18 of app/views/scheduler/new.html.erb:
+15:      <% fields_for "schedulers[#{index}]", schedule do |f| %>
+16:               <th><%= f.text_field :shop_floor  %></th>
+17:              <!-- <th><%= f.text_field :robot %></th> -->
+18:               <%= collection_select(object, method, collection, value_method, text_method, options, html_options) { |unusedlocal|  } %>
+19:               <th><%= collection_select("schedulers[#{index}]", :name, @robots, :id, :name, options ={:prompt => "-Select a robot"}, :class =>"robot") %></th>
+20:               <th><%= f.text_field :move_from  %></th>
+21:               <th><%= f.text_field :move_to  %></th>
+
+    app/views/scheduler/new.html.erb:18
+    app/views/scheduler/new.html.erb:15
+    app/views/scheduler/new.html.erb:13:in `each'
+    app/views/scheduler/new.html.erb:13:in `each_with_index'
+    app/views/scheduler/new.html.erb:13
+    app/views/scheduler/new.html.erb:11
+
+Rendered rescues/_trace (97.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:01:18) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:02:11) [GET]
+  [4;35;1mRobot Load (0.3ms)[0m   [0mSELECT * FROM "robots" [0m
+Rendering scheduler/new
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:03:10) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"Robot 1", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"Robot 2", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"Robot 3", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/scheduler/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "floors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "floor_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mFloor Create (0.2ms)[0m   [0;1mINSERT INTO "floors" ("created_at", "updated_at", "floor_name") VALUES('2011-03-16 09:36:00', '2011-03-16 09:36:00', 'Floor 1')[0m
+  [4;35;1mFloor Create (0.1ms)[0m   [0mINSERT INTO "floors" ("created_at", "updated_at", "floor_name") VALUES('2011-03-16 09:36:00', '2011-03-16 09:36:00', 'Floor 2')[0m
+  [4;36;1mFloor Create (0.1ms)[0m   [0;1mINSERT INTO "floors" ("created_at", "updated_at", "floor_name") VALUES('2011-03-16 09:36:00', '2011-03-16 09:36:00', 'Floor 3')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316093413')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("floors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("robots")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schedulers")[0m
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:08:13) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (49.3ms)[0m   [0mSELECT * FROM "floors" [0m
+Rendering scheduler/new
+Completed in 299ms (View: 134, DB: 50) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:10:13) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"Robot 2", "move_from"=>"left", "shop_floor"=>"Floor 2", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"Robot 3", "move_from"=>"right", "shop_floor"=>"Floor 2", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"Robot 1", "move_from"=>"center", "shop_floor"=>"Floor 1", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:14:56) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+Rendering scheduler/new
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/scheduler/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "movementfroms" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "move_from" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mMovementfrom Create (100.1ms)[0m   [0;1mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 09:49:39', 'Left', '2011-03-16 09:49:39')[0m
+  [4;35;1mMovementfrom Create (0.1ms)[0m   [0mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 09:49:40', 'Right', '2011-03-16 09:49:40')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110316094606')[0m
+Migrating to CreateMovementtos (20110316094824)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "movementtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "move_to" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "movementtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "move_to" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "movementtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "move_to" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mMovementto Create (1.0ms)[0m   [0;1mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Left', '2011-03-16 09:50:04', '2011-03-16 09:50:04')[0m
+  [4;35;1mMovementto Create (0.1ms)[0m   [0mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Right', '2011-03-16 09:50:04', '2011-03-16 09:50:04')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110316094824')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("floors")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("movementfroms")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movementtos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("robots")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedulers")[0m
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:23:59) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.2ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.2ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 37ms (View: 20, DB: 1) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:24:46) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"Right", "robot"=>"Robot 1", "move_from"=>"Left", "shop_floor"=>"Floor 1", "frequency"=>"every min"}, "1"=>{"move_to"=>"Right", "robot"=>"Robot 2", "move_from"=>"Left", "shop_floor"=>"Floor 2", "frequency"=>"every hour"}, "2"=>{"move_to"=>"Left", "robot"=>"Robot 3", "move_from"=>"Right", "shop_floor"=>"Floor 3", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing HomeController#index (for 172.16.2.9 at 2011-03-16 15:25:44) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://172.16.2.9/]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:25:47) [GET]
+  [4;36;1mRobot Load (0.7ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.2ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.2ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 65ms (View: 54, DB: 1) | 200 OK [http://172.16.2.9/scheduler/new]
+
+
+Processing SchedulerController#index (for 172.16.2.9 at 2011-03-16 15:28:43) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 172.16.2.9 at 2011-03-16 15:28:49) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://172.16.2.9/]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:28:51) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.2ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.2ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://172.16.2.9/scheduler/new]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:29:09) [GET]
+  [4;36;1mRobot Load (0.4ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.2ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.3ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 158ms (View: 136, DB: 1) | 200 OK [http://172.16.2.9/scheduler/new]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:29:39) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"/Hjl5PROZehK9hdz6WYjOzCNdOXwsO7hsmXnigMGua4=", "schedulers"=>{"11"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "6"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "12"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "7"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "13"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "8"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "14"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "9"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "15"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "16"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "0"=>{"move_to"=>"Left", "robot"=>"Robot 1", "move_from"=>"Left", "shop_floor"=>"Floor 1", "frequency"=>"every min"}, "17"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "1"=>{"move_to"=>"Left", "robot"=>"Robot 2", "move_from"=>"Left", "shop_floor"=>"Floor 2", "frequency"=>"every hour"}, "18"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "2"=>{"move_to"=>"Right", "robot"=>"Robot 2", "move_from"=>"Right", "shop_floor"=>"Floor 3", "frequency"=>""}, "19"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "3"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "10"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "4"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}, "5"=>{"move_to"=>"", "robot"=>"", "move_from"=>"", "shop_floor"=>"", "frequency"=>""}}}
+Sending data instruction.txt
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://172.16.2.9/scheduler/new]
+
+
+Processing HomeController#index (for 172.16.2.9 at 2011-03-16 15:38:13) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://172.16.2.9/]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:38:15) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.2ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.2ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://172.16.2.9/scheduler/new]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:38:46) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"/Hjl5PROZehK9hdz6WYjOzCNdOXwsO7hsmXnigMGua4=", "schedulers"=>{"0"=>{"move_to"=>"Left", "robot"=>"Robot 1", "move_from"=>"Left", "shop_floor"=>"Floor 1", "frequency"=>"every min"}, "1"=>{"move_to"=>"Right", "robot"=>"Robot 2", "move_from"=>"Left", "shop_floor"=>"Floor 2", "frequency"=>"every hour"}, "2"=>{"move_to"=>"Right", "robot"=>"Robot 3", "move_from"=>"Right", "shop_floor"=>"Floor 3", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://172.16.2.9/scheduler/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+Migrating to RemoveMovementValues (20110316101704)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mMovementfrom Delete all (0.3ms)[0m   [0mDELETE FROM "movementfroms" WHERE 1=1[0m
+  [4;36;1mMovementto Delete all (0.1ms)[0m   [0;1mDELETE FROM "movementtos" WHERE 1=1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316101704')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("floors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movementfroms")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("movementtos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("robots")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedulers")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+Migrating to RemoveMovementValues (20110316101704)
+Migrating to AddMovementValues (20110316101903)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mMovementfrom Create (0.4ms)[0m   [0mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:16', 'Point A', '2011-03-16 10:20:16')[0m
+  [4;36;1mMovementfrom Create (0.1ms)[0m   [0;1mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:16', 'Point B', '2011-03-16 10:20:16')[0m
+  [4;35;1mMovementfrom Create (0.1ms)[0m   [0mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:16', 'Point C', '2011-03-16 10:20:16')[0m
+  [4;36;1mMovementfrom Create (0.1ms)[0m   [0;1mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:16', 'Point D', '2011-03-16 10:20:16')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+Migrating to RemoveMovementValues (20110316101704)
+Migrating to AddMovementValues (20110316101903)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mMovementfrom Create (0.4ms)[0m   [0mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:37', 'Point A', '2011-03-16 10:20:37')[0m
+  [4;36;1mMovementfrom Create (0.1ms)[0m   [0;1mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:37', 'Point B', '2011-03-16 10:20:37')[0m
+  [4;35;1mMovementfrom Create (0.1ms)[0m   [0mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:37', 'Point C', '2011-03-16 10:20:37')[0m
+  [4;36;1mMovementfrom Create (0.1ms)[0m   [0;1mINSERT INTO "movementfroms" ("created_at", "move_from", "updated_at") VALUES('2011-03-16 10:20:37', 'Point D', '2011-03-16 10:20:37')[0m
+  [4;35;1mMovementto Create (0.1ms)[0m   [0mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Point A', '2011-03-16 10:20:37', '2011-03-16 10:20:37')[0m
+  [4;36;1mMovementto Create (0.1ms)[0m   [0;1mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Point B', '2011-03-16 10:20:37', '2011-03-16 10:20:37')[0m
+  [4;35;1mMovementto Create (0.1ms)[0m   [0mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Point C', '2011-03-16 10:20:37', '2011-03-16 10:20:37')[0m
+  [4;36;1mMovementto Create (0.1ms)[0m   [0;1mINSERT INTO "movementtos" ("move_to", "created_at", "updated_at") VALUES('Point D', '2011-03-16 10:20:37', '2011-03-16 10:20:37')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316101903')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("floors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movementfroms")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("movementtos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("robots")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedulers")[0m
+
+
+Processing HomeController#index (for 172.16.2.9 at 2011-03-16 15:50:45) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://172.16.2.9/]
+
+
+Processing SchedulerController#new (for 172.16.2.9 at 2011-03-16 15:50:46) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.3ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.2ms)[0m   [0mSELECT * FROM "movementtos" [0m
+Rendering scheduler/new
+Completed in 77ms (View: 66, DB: 1) | 200 OK [http://172.16.2.9/scheduler/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedulers (20110316045323)
+Migrating to CreateRobots (20110316091555)
+Migrating to CreateFloors (20110316093413)
+Migrating to CreateMovementfroms (20110316094606)
+Migrating to CreateMovementtos (20110316094824)
+Migrating to RemoveMovementValues (20110316101704)
+Migrating to AddMovementValues (20110316101903)
+Migrating to CreateFrequencies (20110316102327)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "frequencies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "frequency" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mFrequency Create (0.3ms)[0m   [0;1mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '1 minute')[0m
+  [4;35;1mFrequency Create (0.1ms)[0m   [0mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '5 minutes')[0m
+  [4;36;1mFrequency Create (0.1ms)[0m   [0;1mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '15 minutes')[0m
+  [4;35;1mFrequency Create (0.1ms)[0m   [0mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '30 minutes')[0m
+  [4;36;1mFrequency Create (0.1ms)[0m   [0;1mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '60 minutes')[0m
+  [4;35;1mFrequency Create (0.1ms)[0m   [0mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '2 hours')[0m
+  [4;36;1mFrequency Create (0.1ms)[0m   [0;1mINSERT INTO "frequencies" ("created_at", "updated_at", "frequency") VALUES('2011-03-16 10:26:22', '2011-03-16 10:26:22', '5 hours')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110316102327')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("floors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("frequencies")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("movementfroms")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movementtos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("robots")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedulers")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 15:58:43) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 15:59:02) [GET]
+Rendering home/index
+Completed in 69ms (View: 68, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 15:59:13) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:59:15) [GET]
+  [4;36;1mRobot Load (0.3ms)[0m   [0;1mSELECT * FROM "robots" [0m
+  [4;35;1mFloor Load (0.2ms)[0m   [0mSELECT * FROM "floors" [0m
+  [4;36;1mMovementfrom Load (0.3ms)[0m   [0;1mSELECT * FROM "movementfroms" [0m
+  [4;35;1mMovementto Load (0.3ms)[0m   [0mSELECT * FROM "movementtos" [0m
+  [4;36;1mFrequency Load (0.4ms)[0m   [0;1mSELECT * FROM "frequencies" [0m
+Rendering scheduler/new
+Completed in 148ms (View: 133, DB: 2) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 15:59:48) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"hwl2Nj2hBvzJ3ak91QHAjngzTHDJeGkUtqAB16Xl74k=", "schedulers"=>{"0"=>{"move_to"=>"5 minutes", "robot"=>"Robot 2", "move_from"=>"Point A", "shop_floor"=>"Floor 1"}, "1"=>{"move_to"=>"5 minutes", "robot"=>"Robot 1", "move_from"=>"Point B", "shop_floor"=>"Floor 2"}, "2"=>{"move_to"=>"30 minutes", "robot"=>"Robot 3", "move_from"=>"Point B", "shop_floor"=>"Floor 3"}}}
+
+TypeError (can't convert nil into String):
+  app/controllers/scheduler_controller.rb:13:in `new'
+  app/controllers/scheduler_controller.rb:12:in `each'
+  app/controllers/scheduler_controller.rb:12:in `new'
+
+Rendered rescues/_trace (92.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 16:01:11) [GET]
+  [4;35;1mRobot Load (0.4ms)[0m   [0mSELECT * FROM "robots" [0m
+  [4;36;1mFloor Load (0.2ms)[0m   [0;1mSELECT * FROM "floors" [0m
+  [4;35;1mMovementfrom Load (0.3ms)[0m   [0mSELECT * FROM "movementfroms" [0m
+  [4;36;1mMovementto Load (0.3ms)[0m   [0;1mSELECT * FROM "movementtos" [0m
+  [4;35;1mFrequency Load (0.4ms)[0m   [0mSELECT * FROM "frequencies" [0m
+Rendering scheduler/new
+Completed in 39ms (View: 24, DB: 2) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 16:01:47) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"hwl2Nj2hBvzJ3ak91QHAjngzTHDJeGkUtqAB16Xl74k=", "schedulers"=>{"0"=>{"move_to"=>"Point B", "robot"=>"Robot 1", "move_from"=>"Point A", "shop_floor"=>"Floor 1", "frequency"=>"30 minutes"}, "1"=>{"move_to"=>"Point D", "robot"=>"Robot 3", "move_from"=>"Point C", "shop_floor"=>"Floor 2", "frequency"=>"15 minutes"}, "2"=>{"move_to"=>"Point D", "robot"=>"Robot 2", "move_from"=>"Point C", "shop_floor"=>"Floor 1", "frequency"=>"5 hours"}}}
+Sending data instruction.txt
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/scheduler/new]

@@ -1,22 +1,31 @@
-<h1>Scheduler#new</h1>
+<h1>New Scheduler</h1>
 <table>
   <tr>
   <th>Floor</th>
   <th>Robot Name</th>
-  <th>Movement From</th>
-  <th>Movement To</th>
+  <th>Move From</th>
+  <th>Move To</th>
   <th>Frequency</th>
   </tr>
   <tr>
   <% form_tag :action => 'new' do %>
+    
    <% @schedulers.each_with_index do |schedule, index| %>
+    
      <% fields_for "schedulers[#{index}]", schedule do |f| %>
-       <th><%= f.text_field :shop_floor  %></th>
-       <th><%= f.text_field :robot %></th>
-       <th><%= f.text_field :move_from  %></th>
-       <th><%= f.text_field :move_to  %></th>
-       <th><%= f.text_field :frequency  %></th>
+              <th><%= collection_select("schedulers[#{index}]", :shop_floor, @floors, :floor_name, :floor_name, options ={:prompt => "-Select a Floor"}, :class =>"floor") %></th>
+              <!--<th><%= f.text_field :shop_floor  %></th> -->
+             <!-- <th><%= f.text_field :robot %></th> -->
+              <th><%= collection_select("schedulers[#{index}]", :robot, @robots, :name, :name, options ={:prompt => "-Select a robot"}, :class =>"robot") %></th>
+              <!--<th><%= f.text_field :move_from  %></th>
+              <th><%= f.text_field :move_to  %></th> -->
+
+              <th><%= collection_select("schedulers[#{index}]", :move_from, @movements_from, :move_from, :move_from, options ={:prompt => "-Select a Value"}, :class =>"movementfrom") %></th>
+              <th><%= collection_select("schedulers[#{index}]", :move_to, @movements_to, :move_to, :move_to, options ={:prompt => "-Select a Value"}, :class =>"movementto") %></th>
+             <!-- <th><%= f.text_field :frequency  %></th> -->
+              <th><%= collection_select("schedulers[#{index}]", :frequency, @freq, :frequency, :frequency, options ={:prompt => "-Select a Frequency"}, :class =>"frequency") %></th>
   <% end %>
+              
   </tr>
        <% end %>
 </table>
