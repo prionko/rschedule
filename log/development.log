@@ -1116,3 +1116,19 @@ Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:32:44) [POST]
   Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
 Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
 Streaming file /Users/saurav/NetBeansProjects/rschdule/instructions.txt
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-03-16 13:42:13) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:42:15) [GET]
+Rendering scheduler/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/scheduler/new]
+
+
+Processing SchedulerController#new (for 127.0.0.1 at 2011-03-16 13:42:28) [POST]
+  Parameters: {"commit"=>"Create Schedule", "authenticity_token"=>"9TzgQLuR7zsL8OW8+gVo96pl+drMG61CWw0fXjrgs9o=", "schedulers"=>{"0"=>{"move_to"=>"right", "robot"=>"saurab", "move_from"=>"left", "shop_floor"=>"1st", "frequency"=>"every min"}, "1"=>{"move_to"=>"left", "robot"=>"saurav", "move_from"=>"right", "shop_floor"=>"2nd", "frequency"=>"every hour"}, "2"=>{"move_to"=>"right", "robot"=>"prionko", "move_from"=>"center", "shop_floor"=>"3rd", "frequency"=>"evry 15 min"}}}
+Sending data instruction.txt
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/scheduler/new]
